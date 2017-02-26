@@ -19,7 +19,7 @@ function getCurrentTabUrl(callback) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+function openPopup() {
   getCurrentTabUrl(function(url) {
     var fullurl = 'https://plus.google.com/share?url=' + encodeURIComponent(url);
     var leftPosition = (window.screen.width / 2) - 400/2;
@@ -30,4 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.open(fullurl, windowName, windowSpecs);
   });
-});
+}
+
+chrome.browserAction.onClicked.addListener(openPopup);

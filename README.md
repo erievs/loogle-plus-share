@@ -1,6 +1,6 @@
 # Google Plus Share
 
-**Google Chrome extension for easy sharing on Google **
+**Google Chrome extension for easy sharing on Google+**
 
 ## License
 

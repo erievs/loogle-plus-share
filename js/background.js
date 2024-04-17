@@ -21,7 +21,7 @@ function getCurrentTabUrl(callback) {
 
 function openPopup() {
   getCurrentTabUrl(function(url) {
-    var fullurl = 'https://plus.google.com/share?url=' + encodeURIComponent(url);
+    var fullurl = 'https://kspc.serv00.net/share?url=' + encodeURIComponent(url);
     var leftPosition = (window.screen.width / 2) - 400/2;
     var topPosition = 460/2;
 
